@@ -1,0 +1,5 @@
+During this assignment we were tasked to recreate the Fake Trillionaire ECommerce app and the ETL pipeline that talks to it. For this assignment I updated the unified database to store SKU IDs as strings instead of integers. I also had to change the SQLAlchemy model and ETL transformation to convert the original integer SKU IDs in to strings and add the sptbg- prefix. In this assignment it called for the source API to be left unaltered, so I left it as the original.  
+
+After I updated the model, I then renamed the etl_staging.db to eti_staging_backup.db to allow changes to take place due to the original retaining the integer task. I then tested the program to ensure that it worked, and it did after having a few hiccups and not realizing that I had a typo in the file names as well as having pip installed.
+
+What surprised me was that even though you have everything done correctly there still could be an issue. my issue was a "," put in place as a "." for my ingestion.py file. Also, as you work you can forget a step or two like installing key components of your environment.  
